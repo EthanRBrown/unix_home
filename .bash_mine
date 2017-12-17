@@ -1,0 +1,10 @@
+export EDITOR=vim
+export PAGER=less
+
+alias gs='git status'
+alias gf='git fetch'
+alias gpff='git pull --ff-only'
+alias gpr='git pull --rebase'
+alias gp='git push'
+
+alias nr='npm run'
