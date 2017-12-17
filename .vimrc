@@ -4,6 +4,7 @@ set softtabstop=2
 set expandtab
 set linebreak
 set backupcopy=yes
+set number
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -28,7 +29,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-syntastic/syntastic.git'
-
 Plugin 'wakatime/vim-wakatime'
 
 " All of your Plugins must be added before the following line
