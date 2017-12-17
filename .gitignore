@@ -1,0 +1,9 @@
+# ignore everything by default
+*
+
+# explicitly include the following
+!.gitignore
+!.vimrc
+!.tmux.conf
+!.bash_mine
+
