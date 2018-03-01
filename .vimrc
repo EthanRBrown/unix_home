@@ -30,8 +30,17 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-syntastic/syntastic.git'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'tomasiser/vim-code-dark'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+set t_Co=256
+set t_ut=
+set background=dark
+colorscheme codedark
+let g:airline_theme = 'codedark'
 
 filetype plugin indent on

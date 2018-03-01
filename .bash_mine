@@ -7,4 +7,6 @@ alias gpff='git pull --ff-only'
 alias gpr='git pull --rebase'
 alias gp='git push'
 
+alias tmux='TERM=xterm-256color tmux'
+
 alias nr='npm run'
