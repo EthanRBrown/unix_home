@@ -5,6 +5,8 @@ set expandtab
 set linebreak
 set backupcopy=yes
 set number
+set foldmethod=indent
+set foldlevel=100   " is there a better way to do this?  i don't want folds closed when i open a file
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -33,6 +35,7 @@ Plugin 'wakatime/vim-wakatime'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
