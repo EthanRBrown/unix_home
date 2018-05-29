@@ -42,6 +42,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'GutenYe/json5.vim'
 Plugin 'kburdett/vim-nuuid.git'
+Plugin 'tpope/vim-surround.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
