@@ -10,17 +10,19 @@ set foldlevel=100   " is there a better way to do this?  i don't want folds clos
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set colorcolumn=115
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
-set wildmode=longest,list,full
+set wildmode=longest,list
 set wildmenu
 syntax enable
 
 au BufNewFile,BufRead *.json5 setlocal ft=json5
+au BufNewFile,BufRead *.elm setlocal ft=elm
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -43,6 +45,8 @@ Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'GutenYe/json5.vim'
 Plugin 'kburdett/vim-nuuid.git'
 Plugin 'tpope/vim-surround.git'
+Plugin 'elmcast/elm-vim'
+Plugin 'jparise/vim-graphql'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -7,8 +7,12 @@ alias gpff='git pull --ff-only'
 alias gpr='git pull --rebase'
 alias gp='git push'
 
+alias cra='create-react-app'
+
 alias tmux='TERM=xterm-256color tmux'
 
 alias nr='npm run'
 
 . ~/.git-completion.bash
+
+alias flushdns='sudo killall -HUP mDNSResponder'
