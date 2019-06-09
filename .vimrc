@@ -23,6 +23,9 @@ syntax enable
 
 au BufNewFile,BufRead *.json5 setlocal ft=json5
 au BufNewFile,BufRead *.elm setlocal ft=elm
+" this shouldn't be necessary, but...?
+au BufNewFile,BufRead *.hbs setlocal syntax=mustache
+au BufNewFile,BufRead *.handlebars setlocal syntax=mustache
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -47,6 +50,8 @@ Plugin 'kburdett/vim-nuuid.git'
 Plugin 'tpope/vim-surround.git'
 Plugin 'elmcast/elm-vim'
 Plugin 'jparise/vim-graphql'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,5 +61,7 @@ set t_ut=
 set background=dark
 colorscheme codedark
 let g:airline_theme = 'codedark'
+let g:javascript_plugin_flow = 1
+set backspace=indent,eol,start
 
 filetype plugin indent on
