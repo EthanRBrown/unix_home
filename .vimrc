@@ -19,6 +19,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 set wildmode=longest,list
 set wildmenu
+set splitright
+set splitbelow
 syntax enable
 
 au BufNewFile,BufRead *.json5 setlocal ft=json5
@@ -26,6 +28,8 @@ au BufNewFile,BufRead *.elm setlocal ft=elm
 " this shouldn't be necessary, but...?
 au BufNewFile,BufRead *.hbs setlocal syntax=mustache
 au BufNewFile,BufRead *.handlebars setlocal syntax=mustache
+au BufNewFile,BufRead *.ts setlocal ft=typescript
+au BufNewFile,BufRead *.tsx setlocal ft=typescript
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -37,6 +41,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-syntastic/syntastic.git'
@@ -52,6 +57,8 @@ Plugin 'elmcast/elm-vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'habamax/vim-asciidoctor'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
