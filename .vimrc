@@ -31,6 +31,9 @@ au BufNewFile,BufRead *.handlebars setlocal syntax=mustache
 au BufNewFile,BufRead *.ts setlocal ft=typescript
 au BufNewFile,BufRead *.tsx setlocal ft=typescript
 
+" github seems to be happier with non-wrapping text....
+au FileType gitcommit setlocal tw=0
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()

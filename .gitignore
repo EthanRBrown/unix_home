@@ -5,5 +5,12 @@
 !.gitignore
 !.vimrc
 !.tmux.conf
-!.bash_mine
 !.git-completion.bash
+!.zsh_mine
+!.zshrc
+
+.Rproj.user
+
+# Supabase
+**/supabase/.branches
+**/supabase/.temp
